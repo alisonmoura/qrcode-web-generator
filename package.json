@@ -1,0 +1,17 @@
+{
+  "name": "qrcode-web-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "qrcode": "1.0.0"
+  },
+  "devDependencies": {
+    "lite-server": "2.3.0"
+  }
+}

@@ -1,0 +1,14 @@
+<input id="text" type="text" placeholder="Type some text">
+<button type="button" onclick="generateQRCode()">Generate QR Code</button>
+<br>
+<canvas id="canvas"></canvas>
+
+<script src="./node_modules/qrcode/build/qrcode.min.js"></script>
+<script>
+    function generateQRCode(){
+        QRCode.toCanvas(document.getElementById('canvas'), document.getElementById("text").value, function (error) {
+            if (error) console.error(error)
+            console.log('success!');
+        })
+    }
+</script>
